@@ -8,8 +8,11 @@ let crearSerie = (cantidad) => {
         let serie = '';
 
         serie += `${fibo1}\t`;
+        console.log("Cantidad: ", cantidad);
+        console.log("Serie: ", serie);
 
         for(let i = 2;i <= cantidad;i++){
+            console.log("Serie: ", serie);
             serie += `${fibo2}\t`;
             fibo2 = fibo1 + fibo2;
             fibo1 = fibo2 - fibo1;
